@@ -1,0 +1,187 @@
+@font-face {
+font-family: 'Dancing Script';
+src: url('../fuentes/DancingScript-Bold.ttf');
+src: url('../fuentes/DancingScript-Regular.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+  font-family: "Dancing Script";
+  background-color: #02010a;
+}
+
+.contenido {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color:#5b7989;
+  margin-left:10 auto;
+  margin-right:10 auto;
+  padding:1px 0 1px 0;
+  border-radius:10px 10px 0 0;
+  width:100%;
+  animation: slidein 1s;
+}
+
+h1 {
+  flex: 1;
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  margin-left: 20px;
+}
+
+navbar {
+  flex: 1;
+  font-size: 20px;
+  text-align: right;
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+#menu a {
+  color: white;
+  text-shadow: none;
+  margin-right: 10px;
+}
+
+#retratos {
+  text-decoration: none;
+}
+
+#galeria {
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foto {
+  width: 25%;
+  margin: 2em;
+}
+
+.foto img {
+  width: 100%;
+  box-shadow: 2px 2px 0px 0 #02010a;
+}
+
+.foto #foto1 {
+  filter: blur(10px);
+}
+
+.foto #foto2 {
+  filter: grayscale(100%);
+}
+
+.foto #foto3 {
+  filter: sepia(90%);
+}
+
+.foto #foto4 {
+  filter: grayscale(100%);
+}
+
+.foto #foto6 {
+  filter: grayscale(100%);
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #C6d5c5;
+  width: 100%;
+  margin-left: 10 auto;
+  margin-right: 10 auto;
+  padding: 1px 0 1px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.columna {
+  display: block;
+}
+
+#redsoc img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+#redsoc a {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (max-width:900px) {
+
+  body {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contenido {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  #titulo {
+    text-align: center;
+  }
+
+  #menu {
+    text-align: center;
+  }
+
+  #galeria {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .foto {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .columna {
+    margin-left: 10px;
+  }
+}
+
+
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0%;
+  }
+}
